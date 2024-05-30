@@ -1,0 +1,47 @@
+.container {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   // justify-content: center;
+   align-items: stretch;
+   // align-content: center;
+   flex-wrap: wrap;
+   // background-color: red;
+
+   .text {
+      width: 60%;
+      // background-color: red;
+
+      p {
+         color: #8892b0;
+         font-size: clamp(13px, 3vw, 17px);
+         line-height: clamp(20px, 4vw, 30px);
+         margin: {
+            bottom: 15px;
+            left: 10px;
+            right: 10px;
+         }
+      }
+   }
+
+   .photo {
+      flex-basis: 40%;
+      background: {
+         image: url('/assets/photos/profile/coding.jpg');
+         size: cover;
+         repeat: no-repeat;
+         position: center center;
+      }
+   }
+
+   @media (max-width: 624px) {
+      .text {
+         width: 100%;
+      }
+
+      .photo {
+         flex-basis: 100%;
+         height: 200px;
+      }
+   }
+}
