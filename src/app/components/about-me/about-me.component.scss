@@ -1,31 +1,71 @@
+// .container {
+//    width: 100%;
+//    display: flex;
+//    flex-direction: row;
+//    // justify-content: center;
+//    align-items: stretch;
+//    // align-content: center;
+//    flex-wrap: wrap;
+//    // background-color: red;
+
+//    .text {
+//       width: 60%;
+//       // background-color: red;
+
+//       p {
+//          color: #8892b0;
+//          font-size: clamp(13px, 3vw, 17px);
+//          line-height: clamp(20px, 4vw, 30px);
+//          margin: {
+//             bottom: 15px;
+//             left: 10px;
+//             right: 10px;
+//          }
+//       }
+//    }
+
+//    .photo {
+//       flex-basis: 40%;
+//       background: {
+//          image: url('/assets/photos/profile/coding.jpg');
+//          size: cover;
+//          repeat: no-repeat;
+//          position: center center;
+//       }
+//    }
+
+//    @media (max-width: 624px) {
+//       .text {
+//          width: 100%;
+//       }
+
+//       .photo {
+//          flex-basis: 100%;
+//          height: 200px;
+//       }
+//    }
+// }
+
 .container {
    width: 100%;
+   // padding: 0 5px;
    display: flex;
-   flex-direction: row;
-   // justify-content: center;
-   align-items: stretch;
-   // align-content: center;
-   flex-wrap: wrap;
-   // background-color: red;
+   flex-direction: column;
+   justify-content: center;
 
    .text {
-      width: 60%;
-      // background-color: red;
-
+      width: 100%;
+      font-size: clamp(10px, 3vw, 17px);
+      line-height: clamp(15px, 3.5vw, 30px);
+      margin-bottom: 10px;
       p {
-         color: #8892b0;
-         font-size: clamp(13px, 3vw, 17px);
-         line-height: clamp(20px, 4vw, 30px);
-         margin: {
-            bottom: 15px;
-            left: 10px;
-            right: 10px;
-         }
+         margin-bottom: 10px;
       }
    }
 
    .photo {
-      flex-basis: 40%;
+      width: 100%;
+      height: 20vh;
       background: {
          image: url('/assets/photos/profile/coding.jpg');
          size: cover;
@@ -34,14 +74,20 @@
       }
    }
 
-   @media (max-width: 624px) {
+   
+   @media(min-width: 1000px) {
+      flex-direction: row;
+      align-items: stretch;
+
       .text {
-         width: 100%;
+         width: 45%;
+         height: auto;
+         margin-right: 10%;
       }
 
       .photo {
-         flex-basis: 100%;
-         height: 200px;
+         width: 45%;
+         height: auto;
       }
    }
 }
