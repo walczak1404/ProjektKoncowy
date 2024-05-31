@@ -2,12 +2,17 @@
    <div class="lists-container">
       <div class="list-names">
          <ul>
-            <li class="selected">Frontend</li>
-            <li>Backend</li>
-            <li>Others</li>
+            <li [ngClass]="{'selected': currentList==='F'}" (click)="onChangeList('F')">Frontend</li>
+            <li [ngClass]="{'selected': currentList==='B'}" (click)="onChangeList('B')">Backend</li>
+            <li [ngClass]="{'selected': currentList==='T'}" (click)="onChangeList('T')">Testing</li>
+            <li [ngClass]="{'selected': currentList==='O'}" (click)="onChangeList('O')">Others</li>
          </ul>
       </div>
-      <div class="current-list">
+      <div class="lists">
+         <app-skills-list [skills]="frontendSkills" *ngIf="currentList==='F'"></app-skills-list>
+         <app-skills-list [skills]="backendSkills" *ngIf="currentList==='B'"></app-skills-list>
+         <app-skills-list [skills]="testingSkills" *ngIf="currentList==='T'"></app-skills-list>
+         <app-skills-list [skills]="otherSkills" *ngIf="currentList==='O'"></app-skills-list>
       </div>
    </div>
 </app-section-layout>

@@ -1,0 +1,14 @@
+.skills-list {
+   list-style-type: "▹";
+   display: grid;
+   grid-template-rows: repeat(4,auto);
+   grid-template-columns: auto auto;
+   grid-auto-flow: row;
+   
+   ::marker {
+      color: #64ffda;
+   }
+
+   li {
+   }
+}

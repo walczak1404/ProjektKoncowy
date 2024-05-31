@@ -15,8 +15,8 @@
          overflow-x: auto;
          // background-color: red;
          width: 100%;
+         line-height: 1.5rem;
          font-size: clamp(15px, 1vw, 20px);
-         padding-bottom: 10px;
          border-bottom: 1px solid #8892b0;
 
          &::-webkit-scrollbar {
@@ -25,13 +25,25 @@
 
          li {
             flex-basis: 33%;
-            min-width: 150px;
+            min-width: 180px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            .selected {
-               background-color: red;
+            &.selected {
+               background-color: #112240;
+               color: #64ffda;
             }
+
+            &:hover {
+               background-color: red;
+            } 
          }
       }
+   }
+
+   .lists {
+
    }
 }
