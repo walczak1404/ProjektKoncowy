@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
-  frontendSkills = ["HTML", "CSS", "SCSS", "Bootstrap", "JavaScript", "TypeScript", "Angular"];
+  frontendSkills = ["HTML", "JavaScript", "CSS", "TypeScript", "SCSS", "Angular", "Bootstrap"];
   backendSkills = ["ASP.NET Core", "C#", "Entity Framework", "Fluent API", "Identity", "SQL", "SQL Server", "Swagger", "Postman"];
   testingSkills = ["xUnit", "Moq", "AutoFixture", "Fluent Assertions"];
   otherSkills = ["CORS", "Swagger", "Git", "GitHub", "Visual Studio", "Visual Studio Core"];

@@ -1,14 +1,19 @@
 .skills-list {
+   // background-color: green;
    list-style-type: "▹";
    display: grid;
-   grid-template-rows: repeat(4,auto);
-   grid-template-columns: auto auto;
-   grid-auto-flow: row;
+   grid-template-columns: min-content min-content;
+   grid-auto-rows: min-content;
+   grid-row-gap: 10px;
+   justify-content: space-evenly;
+   min-height: 50vh;
    
    ::marker {
       color: #64ffda;
    }
 
    li {
+      font-size: clamp(15px, 2vw, 20px);
+      // background-color: red;
    }
 }

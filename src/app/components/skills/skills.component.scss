@@ -16,7 +16,6 @@
          // background-color: red;
          width: 100%;
          line-height: 1.5rem;
-         font-size: clamp(15px, 1vw, 20px);
          border-bottom: 1px solid #8892b0;
 
          &::-webkit-scrollbar {
@@ -30,6 +29,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: clamp(15px, 2vw, 20px);
 
             &.selected {
                background-color: #112240;
@@ -37,7 +37,7 @@
             }
 
             &:hover {
-               background-color: red;
+               background-color: #112240;
             } 
          }
       }

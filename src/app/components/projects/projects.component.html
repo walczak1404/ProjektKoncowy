@@ -1,0 +1,24 @@
+<app-section-layout title="Projects">
+   <div class="wrapper">
+      <div class="arrow arrow-left">
+         <i class="fa-solid fa-chevron-left" (click)="onLastProject()"></i>
+      </div>
+      <div class="projects-container">
+         <div class="project" *ngIf="currentProject === 1">
+            <div class="image"></div>
+            <div class="description">P1</div>
+         </div>
+         <div class="project" *ngIf="currentProject === 2">
+            <div class="image"></div>
+            <div class="description">P2</div>
+         </div>
+         <div class="project" *ngIf="currentProject === 3">
+            <div class="image"></div>
+            <div class="description">P3</div>
+         </div>
+      </div>
+      <div class="arrow arrow-right">
+         <i class="fa-solid fa-chevron-right" (click)="onNextProject()"></i>
+      </div>
+   </div>
+</app-section-layout> 
