@@ -1,24 +1,39 @@
 <app-section-layout title="Projects">
    <div class="wrapper">
-      <div class="arrow arrow-left">
-         <i class="fa-solid fa-chevron-left" (click)="onLastProject()"></i>
-      </div>
-      <div class="projects-container">
-         <div class="project" *ngIf="currentProject === 1">
-            <div class="image"></div>
-            <div class="description">P1</div>
-         </div>
-         <div class="project" *ngIf="currentProject === 2">
-            <div class="image"></div>
-            <div class="description">P2</div>
-         </div>
-         <div class="project" *ngIf="currentProject === 3">
-            <div class="image"></div>
-            <div class="description">P3</div>
-         </div>
-      </div>
-      <div class="arrow arrow-right">
-         <i class="fa-solid fa-chevron-right" (click)="onNextProject()"></i>
-      </div>
+      <swiper class="projects-container" [config]="config">
+         <ng-template swiperSlide>
+            <div class="project">
+               <div class="image">
+                  <img src="assets/photos/projects/project1.png" alt="Project 1 screenshot">
+               </div>
+               <div class="description">
+                  <h2>Project 1</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aliquam dolores labore voluptatibus rerum numquam nam omnis! Odio, itaque eum!</p>
+               </div>
+            </div>
+         </ng-template>
+         <ng-template swiperSlide>
+            <div class="project">
+               <div class="image">
+                  <img src="assets/photos/projects/project1.png" alt="Project 2 screenshot">
+               </div>
+               <div class="description">
+                  <h2>Project 2</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aliquam dolores labore voluptatibus rerum numquam nam omnis! Odio, itaque eum!</p>
+               </div>
+            </div>
+         </ng-template>
+         <ng-template swiperSlide>
+            <div class="project">
+               <div class="image">
+                  <img src="assets/photos/projects/project1.png" alt="Project 3 screenshot">
+               </div>
+               <div class="description">
+                  <h2>Project 3</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aliquam dolores labore voluptatibus rerum numquam nam omnis! Odio, itaque eum!</p>
+               </div>
+            </div>
+         </ng-template>
+      </swiper>
    </div>
 </app-section-layout> 
