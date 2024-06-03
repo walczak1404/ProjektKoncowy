@@ -40,7 +40,7 @@ $sectionMargin: 10px;
             top: 0;
             left: 0;
             background-color: #0a192f;
-            animation: typeGreet steps(14) 3s forwards, typeSign 3 1s;
+            animation: typeGreet steps(14) 1.3s forwards, typeSign 3 1s;
          }
       }
    
@@ -86,11 +86,11 @@ $sectionMargin: 10px;
    }
 }
 
-// .name, .summary, .photo {
-//    opacity: 0;
-//    transform: translateY(50px);
-//    animation: showContent 1s 3.5s forwards;
-// }
+.name, .summary, .photo {
+   opacity: 0;
+   transform: translateY(50px);
+   animation: showContent 1s 1.5s forwards;
+}
 
 @keyframes typeGreet {
    100% {

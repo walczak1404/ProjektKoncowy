@@ -1,35 +1,107 @@
+// .lists-container {
+//    // background-color: green;
+//    width: 75%;
+//    min-width: 300px;
+//    margin: auto;
+
+//    .list-names {
+//       margin: {
+//          top: 10px;
+//          bottom: 10px;
+//       }
+//       width: 100%;
+
+//       ul {
+//          display: flex;
+//          list-style-type: none;
+//          overflow-x: auto;
+//          // background-color: red;
+//          width: 100%;
+//          line-height: 1.5rem;
+//          border-bottom: 1px solid #8892b0;
+//          margin-bottom: 15px;
+
+//          &::-webkit-scrollbar {
+//             height: 3px;
+//          }
+
+//          li {
+//             flex-basis: 25%;
+//             min-width: 140px;
+//             text-align: center;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             font-size: clamp(12px, 2vw, 16px);
+
+//             &.selected {
+//                background-color: #112240;
+//                color: #64ffda;
+//             }
+
+//             &:hover {
+//                background-color: #112240;
+//             } 
+//          }
+//       }
+//    }
+
+//    @media(min-width: 730px) {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+
+//       .list-names {
+//          flex-basis: 40%;
+//          height: 100%;
+//          // background-color: red;
+
+//          ul {
+//             height: 100%;
+//             flex-direction: column;
+//             border-bottom: none;
+//             border-right: 1px solid #8892b0;
+//             margin-bottom: 0;
+//          }
+//       }
+
+//       .lists {
+//          // background-color: red;
+//          flex-basis: 50%;
+//       }
+//    }
+// }
+
 .lists-container {
-   // background-color: green;
-   width: 100%;
+   // background-color: red;
+   display: flex;
+   justify-content: center;
+   height: 150px;
+   container-type: inline-size;
+   
 
    .list-names {
-      margin: {
-         top: 10px;
-         bottom: 10px;
-      }
-      width: 100%;
+      // background-color: green;
+      flex-basis: 15%;
+      min-width: 140px;
 
       ul {
-         display: flex;
          list-style-type: none;
-         overflow-x: auto;
-         // background-color: red;
-         width: 100%;
-         line-height: 1.5rem;
-         border-bottom: 1px solid #8892b0;
+         // background-color: grey;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         border-right: 1px solid #8892b0;
+         user-select: none;
 
-         &::-webkit-scrollbar {
-            height: 3px;
-         }
 
          li {
-            flex-basis: 33%;
-            min-width: 180px;
+            flex-basis: 25%;
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: clamp(15px, 2vw, 20px);
+            font-size: clamp(12px, 2vw, 16px);
 
             &.selected {
                background-color: #112240;
@@ -44,6 +116,10 @@
    }
 
    .lists {
-
+      // background-color: yellow;
+      flex-basis: 40%;
+      min-width: 371.5px;
    }
+
+   // @container()
 }

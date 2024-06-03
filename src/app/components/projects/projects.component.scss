@@ -3,9 +3,9 @@
 @import "swiper/scss/navigation";
 
 .wrapper {
-   // min-height: 40vh;
    display: flex;
    container-type: inline-size;
+   // background-color: red;
 
    .projects-container {
       flex-grow: 1;
@@ -21,7 +21,7 @@
       .project {      
          width: 100%;
          height: 100%;
-         padding: 7%;
+         // padding: 7%;
 
          display: flex;
          align-items: center;
@@ -29,7 +29,7 @@
          .image {
             // background-color: yellow;
             flex-basis: 50%;
-            padding: 5%;
+            // padding: 5%;
 
             background: {
                size: cover;
@@ -60,6 +60,7 @@
 
          .image {
             max-height: 50%;
+            // background-color: yellow;
 
             img {
                max-height: 30%;

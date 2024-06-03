@@ -6,6 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './section-layout.component.scss'
 })
 export class SectionLayoutComponent {
-  @Input("title") title: string;
-
+  @Input() title: string;
 }

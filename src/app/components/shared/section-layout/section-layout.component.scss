@@ -1,10 +1,14 @@
 .container {
-   height: 100vh;
-   margin: 0 5px;
+   // height: 100vh;
+   // margin: 300px 5px;
+   margin: {
+      left: 5px;
+      right: 5px;
+      bottom: 10vh;
+   }
    display: flex;
    flex-direction: column;
    align-items: center;
-   // background-color: red;
 
    .article {
       width: 65vw;
@@ -29,15 +33,16 @@
          // background-color: green;
 
          h2 {
-            font-size: clamp(25px, 4vw, 40px);
+            font-size: clamp(20px, 4vw, 30px);
             margin-right: 20px;
+            color: #ccd6f6;
          }
 
          .line {
             flex-grow: 1;
             height: 1px;
             width: 1px;
-            background-color: #64ffda;
+            background-color: #233554;
          }
       }
 
