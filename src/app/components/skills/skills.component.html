@@ -1,11 +1,12 @@
 <app-section-layout title="Skills">
-   <div class="lists-container">
+   <div class="lists-container" id="skills">
       <div class="list-names">
          <ul>
             <li [ngClass]="{'selected': currentList==='F'}" (click)="onChangeList('F')">Frontend</li>
             <li [ngClass]="{'selected': currentList==='B'}" (click)="onChangeList('B')">Backend</li>
             <li [ngClass]="{'selected': currentList==='T'}" (click)="onChangeList('T')">Testing</li>
             <li [ngClass]="{'selected': currentList==='O'}" (click)="onChangeList('O')">Others</li>
+            <div class="pointer" #pointer></div>
          </ul>
       </div>
       <div class="lists">

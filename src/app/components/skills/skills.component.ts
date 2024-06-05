@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
@@ -13,7 +13,35 @@ export class SkillsComponent {
 
   currentList = "F";
 
+  @ViewChild("pointer") pointer: ElementRef;
+
   onChangeList(newList: string) {
     this.currentList = newList;
+
+    let transformAmount;
+
+    switch(this.currentList) {
+      case "B":
+        transformAmount = "100%";
+        break;
+      case "T":
+        transformAmount = "200%";
+        break;
+      case "O":
+        transformAmount = "300%";
+        break;
+      default:
+        transformAmount = "0";
+    }
+
+    let transformQuery;
+
+    if(getComputedStyle(this.pointer.nativeElement).top === "0px") {
+      transformQuery = `translateY(${transformAmount})`;
+    } else {
+      transformQuery = `translateX(${transformAmount})`;
+    }
+
+    this.pointer.nativeElement.style.transform = transformQuery;
   }
 }

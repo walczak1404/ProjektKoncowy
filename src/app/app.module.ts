@@ -10,6 +10,9 @@ import { SectionLayoutComponent } from './components/shared/section-layout/secti
 import { SkillsComponent } from './components/skills/skills.component';
 import { SkillsListComponent } from './components/skills/skills-list/skills-list.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [ 
@@ -19,7 +22,10 @@ import { ProjectsComponent } from './components/projects/projects.component';
     SectionLayoutComponent,
     SkillsComponent,
     SkillsListComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

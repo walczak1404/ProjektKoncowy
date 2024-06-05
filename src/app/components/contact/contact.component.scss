@@ -1,0 +1,40 @@
+.container {
+   text-align: center;
+   margin-bottom: 60px;
+
+   h2 {
+      margin-bottom: 25px;
+      font-size: 1.7rem;
+      color: #ccd6f6;
+   }
+
+   p {
+      margin-bottom: 10px;
+      
+
+      &.mail-btn {
+         padding: 15px 0;
+         a {
+            border: 1px solid #64ffda;
+            border-radius: 5px;
+            padding: 15px 30px;
+            color: #64ffda;
+            font-size: .8rem;
+         }
+      }
+
+      &.or {
+         
+      }
+
+      &.profiles-text {
+         color: #64ffda;
+      }
+
+      &.profiles-links {
+         a {
+            margin: 10px;
+         }
+      }
+   }
+}

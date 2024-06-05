@@ -1,6 +1,4 @@
 .container {
-   // height: 100vh;
-   // margin: 300px 5px;
    margin: {
       left: 5px;
       right: 5px;
@@ -29,6 +27,7 @@
          margin-bottom: 5%;
          width: 100%;
          display: flex;
+         justify-content: center;
          align-items: center;
          // background-color: green;
 

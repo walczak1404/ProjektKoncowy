@@ -35,12 +35,11 @@
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   // justify-content: center;
-   align-items: center;
+   align-items: flex-start;
    margin-left: 5%;
 
    p {
-      flex-basis: 33.3333%;
+      flex-basis: 25%;
       // background-color: green;
       display: flex;
       justify-content: center;
@@ -48,12 +47,13 @@
       text-align: center;
    }
 
-   li {
-
-
-   }
-
    ::marker {
       color: #64ffda;
+   }
+
+   @media (max-width: 784px) {
+      margin-left: 0;
+      align-content: space-evenly;
+      height: 120px;
    }
 }
