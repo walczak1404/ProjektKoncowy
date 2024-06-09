@@ -1,17 +1,24 @@
-<header *ngIf="headerVisible">
+<header #header>
    <nav>
       <ul>
-         <li>
-            <a href="#about-me">About Me</a>
+         <li class="lang-list-item">
+            <span (click)="onLangDisplay()"><i class="fa-solid fa-globe"></i> <i class="fa-solid fa-angle-down"></i></span>
+            <div *ngIf="langsVisible" (click)="onChangeLanguage($event)">
+               <p data-lang="en">EN</p>
+               <p data-lang="pl">PL</p>
+            </div>
          </li>
          <li>
-            <a href="#skills">Skills</a>
+            <a href="#about-me">{{'about-me'|translate}}</a>
          </li>
          <li>
-            <a href="#projects">Projects</a>
+            <a href="#skills">{{'skills'|translate}}</a>
          </li>
          <li>
-            <a href="#contact">Contact</a>
+            <a href="#projects">{{'projects'|translate}}</a>
+         </li>
+         <li>
+            <a href="#contact">{{'contact'|translate}}</a>
          </li>
       </ul>
    </nav>
