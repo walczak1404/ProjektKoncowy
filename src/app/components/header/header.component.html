@@ -1,4 +1,4 @@
-<header #header>
+<header #header [ngClass]="{'visible': headerVisible}">
    <nav>
       <ul>
          <li class="lang-list-item">
@@ -9,17 +9,22 @@
             </div>
          </li>
          <li>
-            <a href="#about-me">{{'about-me'|translate}}</a>
+            <a href="#about-me" (click)="onToggleHeader()">{{'about-me'|translate}}</a>
          </li>
          <li>
-            <a href="#skills">{{'skills'|translate}}</a>
+            <a href="#skills" (click)="onToggleHeader()">{{'skills'|translate}}</a>
          </li>
          <li>
-            <a href="#projects">{{'projects'|translate}}</a>
+            <a href="#projects" (click)="onToggleHeader()">{{'projects'|translate}}</a>
          </li>
          <li>
-            <a href="#contact">{{'contact'|translate}}</a>
+            <a href="#contact" (click)="onToggleHeader()">{{'contact'|translate}}</a>
          </li>
       </ul>
    </nav>
 </header>
+<div class="burger" [ngClass]="{'burger-rotated': headerVisible}" (click)="onToggleHeader()">
+   <div class="burger-part burger-part-top"></div>
+   <div class="burger-part burger-part-mid"></div>
+   <div class="burger-part burger-part-bot"></div>
+</div>

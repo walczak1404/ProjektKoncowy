@@ -9,11 +9,13 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent implements OnInit {
   @ViewChild("header", {static: true}) header: ElementRef;
   langsVisible: boolean;
+  headerVisible: boolean;
 
   constructor(private translateService: TranslateService) {}
 
   ngOnInit(): void {
       this.langsVisible = false;
+      this.headerVisible = false;
   }
 
   @HostListener("window:scroll")
@@ -28,9 +30,13 @@ export class HeaderComponent implements OnInit {
 
   onChangeLanguage(event) {
     const selectedLanguage = event.target.dataset["lang"]
-    console.log(selectedLanguage);
     localStorage.setItem("lang", selectedLanguage);
     this.translateService.use(selectedLanguage);
+    this.langsVisible = false;
+  }
+
+  onToggleHeader() {
+    this.headerVisible = !this.headerVisible;
     this.langsVisible = false;
   }
 }
