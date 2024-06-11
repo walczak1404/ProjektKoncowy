@@ -29,7 +29,10 @@ export class HeaderComponent implements OnInit {
   }
 
   onChangeLanguage(event) {
-    const selectedLanguage = event.target.dataset["lang"]
+    const selectedLanguage = event.target.dataset["lang"];
+    if(localStorage.getItem("useCookies") == "true") {
+      document.cookie = `lang=${selectedLanguage}`;
+    }
     localStorage.setItem("lang", selectedLanguage);
     this.translateService.use(selectedLanguage);
     this.langsVisible = false;

@@ -7,3 +7,4 @@
    <app-contact></app-contact>
 </main>
 <app-footer></app-footer>
+<app-popup *ngIf="showCookiesPopup" (cookiesClosed)="onCookiesClose($event)"></app-popup>

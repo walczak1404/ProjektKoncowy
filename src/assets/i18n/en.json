@@ -21,5 +21,10 @@
    "contact-or": "or",
    "contact-check-profiles": "Check my profiles",
 
-   "footer": "Created by Dawid Walczak"
+   "footer": "Created by Dawid Walczak",
+
+   "cookies-header": "I value Your privacy",
+   "cookies-paragraph": "This app uses cookies, to enhance your browsing experience. By clicking \"Accept all\", you consent to my use of cookies.",
+   "cookies-accept": "Accept all",
+   "cookies-decline": "Decline all"
 }

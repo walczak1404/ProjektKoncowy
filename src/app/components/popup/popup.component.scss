@@ -1,0 +1,39 @@
+.container {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: #0a193f;
+   text-align: center;
+
+   h2 {
+      margin: {
+         top: 20px;
+         bottom: 3vh;
+      }
+      font-size: 1.3rem;
+   }
+
+   p {
+      font-size: .8rem;
+      margin-bottom: 2vh;
+   }
+
+   .buttons {
+      margin: 10px;
+
+      button {
+         background-color: transparent;
+         outline: none;
+         border: 1px solid;
+         border-radius: 10px;
+         color: inherit;
+         margin: 15px;
+         padding: 10px;
+
+         &.accept {
+            color: #64ffda;
+         }
+      }
+   }
+}

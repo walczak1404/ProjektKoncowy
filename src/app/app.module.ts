@@ -16,6 +16,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { PopupComponent } from './components/popup/popup.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http)
@@ -32,7 +33,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProjectsComponent,
     ContactComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,

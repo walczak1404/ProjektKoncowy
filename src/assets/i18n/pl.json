@@ -21,5 +21,10 @@
    "contact-or": "lub",
    "contact-check-profiles": "Sprawdź moje profile",
 
-   "footer": "Strona stworzona przez Dawida Walczaka"
+   "footer": "Strona stworzona przez Dawida Walczaka",
+
+   "cookies-header": "Szanuję Twoją prywatność",
+   "cookies-paragraph": "Ta strona używa ciasteczek, żeby ulepszyć Twoje doświadczenia związane z jej przeglądaniem. Klikając \"Akceptuj wszystkie\", zgadzasz się na ich używanie.",
+   "cookies-accept": "Akceptuj wszystkie",
+   "cookies-decline": "Odrzuć wszystkie"
 }
