@@ -7,9 +7,7 @@ $sectionMargin: 10px;
    display: flex;
    justify-content: space-evenly;
    align-items: center;
-   // align-content: center;
    flex-wrap: wrap;
-   // background-color: red;
    
 
    .welcome {
@@ -19,7 +17,6 @@ $sectionMargin: 10px;
       flex-direction: column;
       justify-content: center;
       position: relative;
-      // background-color: red;
 
       .greet {
          color: #64ffda;
@@ -56,18 +53,11 @@ $sectionMargin: 10px;
       .summary {
          color: $secondColor;
       }
-
-      // .socials {
-      //    position: absolute;
-      //    bottom: 0;
-      //    left: 0;
-      // }
    }
 
    .photo {
       margin-left: $sectionMargin;
       height: 45%;
-      // background-color: green;
 
       .image-container {
          height: 100%;

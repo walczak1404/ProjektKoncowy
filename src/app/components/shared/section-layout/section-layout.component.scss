@@ -17,7 +17,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      // background-color: grey;
 
       @media(orientation: landscape) and (max-height: 470px) {
          width: 100%;
@@ -29,7 +28,6 @@
          display: flex;
          justify-content: center;
          align-items: center;
-         // background-color: green;
 
          h2 {
             font-size: clamp(20px, 4vw, 30px);
@@ -47,7 +45,6 @@
 
       .content {
          width: 100%;
-         // background-color: red;
       }
    }
 }

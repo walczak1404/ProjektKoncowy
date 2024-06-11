@@ -1,8 +1,6 @@
 $list-names-border: 1px solid #233554;
 
 .lists-container {
-   // background-color: red;
-   // width: fit-content;
    display: flex;
    justify-content: center;
    height: 150px;
@@ -10,13 +8,11 @@ $list-names-border: 1px solid #233554;
    
 
    .list-names {
-      // background-color: green;
       flex-basis: 15%;
       min-width: 140px;
 
       ul {
          list-style-type: none;
-         // background-color: grey;
          height: 100%;
          display: flex;
          flex-direction: column;
@@ -56,7 +52,6 @@ $list-names-border: 1px solid #233554;
    }
 
    .lists {
-      // background-color: yellow;
       flex-basis: 40%;
       min-width: 371.5px;
    }
