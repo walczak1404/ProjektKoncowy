@@ -13,9 +13,8 @@
    "skills-testing": "Testing",
    "skills-others": "Others",
 
-   "project-1": "App where users can guess where they are based on street view images. IT WAS NOT CREATED BY ME, but I have not created any projects that are worth showing yet, so I had to put something here.",
-   "project-2": "Application where users can guess songs based on short sample. IT WAS NOT CREATED BY ME, but I have not created any projects that are worth showing yet, so I had to put something here.",
-   "project-3": "Game where the goal is to guess football player based on blurred image of him and hints got in guesses before. IT WAS NOT CREATED BY ME, but I have not created any projects that are worth showing yet, so I had to put something here.",
+   "project-1": "An application for sharing your thoughts with others. You can do this by providing your nickname or completely anonymously. Users can also discuss others' thoughts in the comments section.",
+   "project-2": "A website that helps users plan their daily tasks. After creating an account, users can add, delete, edit, and mark tasks as completed. A clear calendar allows adding tasks even for distant future dates.",
 
    "contact-email-me": "Email me!",
    "contact-or": "or",

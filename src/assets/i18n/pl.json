@@ -13,9 +13,8 @@
    "skills-testing": "Testowanie",
    "skills-others": "Inne",
 
-   "project-1": "Aplikacja, gdzie użytkownicy muszą zgadnąć w jakiej lokalizacji na świecie są, bazując na zdjęciach ze Street View. NIE JEST ONA STWORZONA PRZEZE MNIE, ale nie stworzyłem jeszcze projektów, które są warte pokazania.",
-   "project-2": "Aplikacja, gdzie użytkownicy muszą zgadnąć piosenkę, bazując na jej krótkim fragmencie. NIE JEST ONA STWORZONA PRZEZE MNIE, ale nie stworzyłem jeszcze projektów, które są warte pokazania.",
-   "project-3": "Gra, gdzie celem jest zgadnięcie piłkarza na podstawie jego rozmazanego zdjęcia oraz wskazówek uzyskanych w poprzednich próbach. NIE JEST ONA STWORZONA PRZEZE MNIE, ale nie stworzyłem jeszcze projektów, które są warte pokazania.",
+   "project-1": "Aplikacja służąca do dzielenia się swoimi przemyśleniami z innymi. Można to robić, podając swój nick, bądź całkowicie anonimowo. Użytkownicy mogą również dyskutować na temat przemyśleń innych w sekcji komentarzy.",
+   "project-2": "Strona pomagająca użytkownikom w planowaniu zadań na każdy dzień. Po założeniu konta, można dodawać, usuwać, edytować, a także oznaczać zadania jako wykonane. Przejrzysty kalendarz pozwala na dodawanie zadań nawet na bardzo odległe dni.",
 
    "contact-email-me": "Wyślij email!",
    "contact-or": "lub",
