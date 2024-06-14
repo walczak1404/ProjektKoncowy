@@ -1,0 +1,29 @@
+{
+   "about-me": "About me",
+   "skills": "Skills",
+   "projects": "Projects",
+   "contact": "Contact",
+   "contact-big": "Want to get in touch?",
+
+   "hero-welcome": "Hi, my name is",
+
+   "about-me-content-1": "Hello! My name is Dawid. I am a web developer with a passion for creating dynamic and user-friendly websites. My interest in web development began in 2020, and since then, I have dedicated myself to mastering the art of building websites that not only look great but also provide seamless user experiences.",
+   "about-me-content-2": "Currently, I'm just starting my career and looking for opportunity to gain some experience from the best in the industry.",
+
+   "skills-testing": "Testing",
+   "skills-others": "Others",
+
+   "project-1": "An application for sharing your thoughts with others. You can do this by providing your nickname or completely anonymously. Users can also discuss others' thoughts in the comments section.",
+   "project-2": "A website that helps users plan their daily tasks. After creating an account, users can add, delete, edit, and mark tasks as completed. A clear calendar allows adding tasks even for distant future dates.",
+
+   "contact-email-me": "Email me!",
+   "contact-or": "or",
+   "contact-check-profiles": "Check my profiles",
+
+   "footer": "Created by Dawid Walczak",
+
+   "cookies-header": "I value Your privacy",
+   "cookies-paragraph": "This app uses cookies, to enhance your browsing experience. By clicking \"Accept all\", you consent to my use of cookies.",
+   "cookies-accept": "Accept all",
+   "cookies-decline": "Decline all"
+}
