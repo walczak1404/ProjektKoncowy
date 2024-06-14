@@ -9,6 +9,8 @@ header {
    opacity: .5;
    transition: .3s;
    z-index: 3;
+   opacity: 0;
+   animation: comeIn 1s 2s forwards;
 
    &:hover {
       opacity: 1;
@@ -140,5 +142,15 @@ header {
       &-rotated {
          transform: rotate(-90deg);
       }
+   }
+}
+
+@keyframes comeIn {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
    }
 }

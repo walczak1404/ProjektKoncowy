@@ -5,6 +5,8 @@
    right: 0;
    background-color: #0a193f;
    text-align: center;
+   opacity: 0;
+   animation: comeIn 1s 2s forwards;
 
    h2 {
       margin: {
@@ -35,5 +37,15 @@
             color: #64ffda;
          }
       }
+   }
+}
+
+@keyframes comeIn {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
    }
 }
